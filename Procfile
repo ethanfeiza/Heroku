@@ -1,1 +1,1 @@
-web: gunicorn employee_salary:app
+web: python employee_salary.py
