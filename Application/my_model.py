@@ -6,7 +6,9 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 # Load model training data
-data = pd.read_csv('hr_dashboard_data.csv')
+url = 'https://github.com/ethanfeiza/Heroku/blob/6af7c5acebd916dcfdea388c0bce1aae3d8fd713/Application/hr_dashboard_data.csv'
+download = requests.get(url).content
+data = pd.read_csv(io.StringIO(download.decode('utf-8')))
 data = data.drop(['Name', 'Department', 'Projects Completed', 'Position', 'Joining Date'], axis=1)
 
 # Assign variables
