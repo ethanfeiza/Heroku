@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 # Load model training data
-data = pd.read_csv("C:/Users/ethan/OneDrive/Documents/Data Glacier/datasets/hr_dashboard_data.csv")
+data = pd.read_csv('hr_dashboard_data.csv')
 data = data.drop(['Name', 'Department', 'Projects Completed', 'Position', 'Joining Date'], axis=1)
 
 # Assign variables
