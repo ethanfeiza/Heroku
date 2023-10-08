@@ -2,3 +2,4 @@ numpy==1.26.0
 scipy==1.11.2
 xgboost==2.0.0
 Flask==2.1.1
+Werkzeug==2.0.2
