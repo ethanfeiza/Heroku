@@ -1,1 +1,1 @@
-web: python myapp.py
+web: python my_model.py
