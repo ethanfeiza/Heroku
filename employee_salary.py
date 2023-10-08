@@ -20,4 +20,4 @@ def predict():
     return render_template('my_index.html', prediction_text='Estimated Employee Salary: ${}'.format(output))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
