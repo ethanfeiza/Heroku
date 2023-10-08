@@ -1,1 +1,1 @@
-web: python my_model.py
+web: python employee_salary.py
